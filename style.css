@@ -1,0 +1,555 @@
+*{
+    font-family: "Markazi Text", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+header{
+    background-color:  rgb(161, 98, 58);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*Styling navBar*/
+.navbar button{
+    display: none;
+}
+.navbar{
+    padding:20px 120px;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar .navicon{
+    color: rgb(41, 11, 11);
+    font-size:22px;
+    padding-top: 5px;
+}
+
+
+.navbar .navlist .navUnlist{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navbar .navlist .navUnlist .navullink{
+    
+    list-style: none;
+    font-size: 22px;
+    
+   
+}
+.navbar .navlist .navUnlist .navullink a{
+    text-decoration: none;
+    padding: 5px;
+    color:  rgb(41, 11, 11);
+    transition: .5s ease;
+}
+.navbar .navlist .navUnlist .navullink a:hover{
+    cursor: pointer;
+    background-color: rgb(65, 16, 16);
+    border-radius:7px;
+    color:  rgb(161, 98, 58);
+ 
+}
+
+
+/*Hero section styling*/
+.section-1{
+    background-color:  rgb(161, 98, 58) ;
+    min-height: 100vh;
+    padding:20px 120px;
+
+}
+.section-1 .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(41, 11, 11);
+    min-height: 100vh;
+    max-width: 100%;
+ 
+}
+
+
+.section-1 .section-details .mainheading{
+   font-size:1.8rem;
+   font-family: "Pacifico", cursive;
+   color:rgb(245, 240, 220);
+   
+}
+.section-1 .section-content .section-details .subtitle{
+    font-size: 2.4rem;
+    padding: 10px 0;
+    max-width: 70%;
+}
+.section-1 .section-content .section-details p{
+    font-size:22px;
+    padding: 10px 0;
+    max-width: 70%;
+}
+.section-1 .section-content .section-details .buttons{
+    padding: 25px 0;
+    display: flex;
+    gap: 25px;
+}
+.section-1 .section-content .section-details .button{
+    color:rgb(161, 98, 58);
+    background-color: rgb(245, 240, 220);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+}
+.section-1 .section-content .section-details .button:hover{
+    border-color:  rgb(245, 240, 220);
+    color: rgb(245, 240, 220);
+    background-color: transparent;
+}
+.section-1 .section-content .image img{
+    width: 100%;
+    max-width: 500px;
+    margin-right:30px;
+    max-height: 100vh;
+    height: auto;
+    
+    
+}
+/*about styling*/
+.aboutContainer{
+    padding: 70px 120px;
+background-color:rgb(245, 239, 220) ;
+}
+.aboutContainer .sectionContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  gap: 80px;
+}
+.aboutContainer .sectionContent .aboutImage img{
+    border-radius: 100%;
+    width:300px;
+    height:300px;
+}
+.aboutContainer .aboutDetails{
+    max-width: 50%;
+}
+.heading{
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 2rem;
+     padding: 60px 0 0;
+     color: rgb(41, 11, 11);
+}
+ .heading::after{
+    content: "";
+    width:100px;
+    height: 7px;
+    background-color: rgb(161, 98, 58);
+    display: block;
+    border-radius: 5px;
+    margin:5px auto 0
+}
+
+.about-para{
+    line-height: 30pxpx;
+    text-align: center;
+    font-size: x-large;
+    margin: 50px 0px 30px;
+    width: 100%;
+}
+
+.aboutContainer .sectionContent .social-link{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin:50px 0 0;
+}
+.aboutContainer .sectionContent .social-link .links{
+    color: rgb(41, 11, 11);
+    font-size: x-large;
+    transition: .4s ease;
+}
+.aboutContainer .sectionContent .social-link .links:hover{
+    color: rgb(161, 98, 58);;
+}
+
+/*Menu Styling*/
+.menusection{
+    padding: 30px 120px 100px;
+background-color:rgb(229, 195, 174) ;
+
+}
+.menusection .menulist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    list-style: none;
+    align-items: center;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+.menusection .menulist .lists{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   justify-content: space-between;
+   width: calc(100% /3 - 110px);
+   
+}
+.menusection .menulist .lists img{
+    max-width: 83%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.menusection .menulist .lists .image-title{
+    padding-top:30px;
+    font-size:xx-large;
+}
+.menusection .menulist .lists .image-description{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* Testinomial section Styling*/
+.testimonialsection{
+    padding:  30px 40px 100px;
+    background-color: rgb(245, 221, 178);
+}
+.testimonialsection .testinomiallist{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  
+}
+.testimonialsection .testinomials img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius:100%;
+    margin: 50px 0 25px;
+  
+}
+.testimonialsection .testinomials .name{
+    margin-bottom: 10x;
+    font-size: x-large;
+}
+.testimonialsection .testinomials .feedback{
+    line-height: 25px;
+
+}
+.testimonialsection .swiper-slide-button{
+    color:rgb(161, 98, 58);
+    transition: 0.2 ease;
+}
+.testimonialsection .swiper-slide-button:hover{
+    color:rgb(41, 11, 11);
+}
+.testimonialsection .sliderwrap{
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+/*Gallery styling*/
+.gallerysection{
+    padding:  30px 40px 100px;
+    background-color: rgb(219, 175, 124);
+}
+.gallerysection .section-content{
+    margin: 100px 50px 40px;
+}
+.gallerysection .gallerylist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.gallerysection .gallerylist .galleryitem{
+    width: calc(100% / 3 - 32px);
+    list-style: none;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.gallerysection .gallerylist .galleryitem img{
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  transition: 0.5s ease;
+}
+.gallerysection .gallerylist .galleryitem img:hover{
+    transform: scale(1.3);
+}
+
+/*Contact Styling*/
+.contactsection{
+    padding:  30px 120px 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contactsection .contactdetails{
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.contactsection .contactitems .contactinfo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+    font-size:23px;
+}
+.contactsection .contactform .forminput{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid rgb(161, 98, 58);
+    font-size: x-large;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 12px;
+}
+.contactsection .contactform .forminput:focus{
+    border-color: rgb(161, 98, 58);
+}
+.contactsection .contactform textarea{
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+.contactsection .contactform{
+    max-width: 50%;
+}
+.contactsection .contactform .submitbutton{
+    padding: 10px 26px;
+    color: white;
+    background-color:rgb(161, 98, 58) ;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 9px;
+    margin-top: 20px;
+    font-size: larger;
+    transition: 0.4s ease;
+}
+.contactsection .contactform .submitbutton:hover{
+    background-color:transparent;
+    color:rgb(69, 59, 48) ;
+    cursor: pointer;
+}
+/*footer styling*/
+.footersection{
+    padding: 20px 120px;
+    background-color: black;
+   
+}
+.footersection .sectioncontent{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footersection :where(.copyrighttext, .sociallink, .policylink){
+    color: white;
+}
+.footersection .sociallinklist{
+    display: flex;
+    gap: 25px;
+    margin: 0 20px;
+}
+.footersection .sociallinklist .sociallink{
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+.footersection .sociallinklist .sociallink:hover{
+   color: rgb(177, 127, 127);
+}
+.footersection .policytext .seperator{
+    color: white;
+}
+.footersection .policytext a{
+    text-decoration: none;
+}
+.footersection .policytext a:hover{
+    color: rgb(177, 127, 127);
+}
+
+@media screen and (max-width:1100px) {
+    .navbar{
+        padding:20px 80px;
+    }
+    .navbar button{
+        font-size: large;
+        background: none;    
+        border: none;       
+        padding: 0;          
+         color: inherit;     
+        text-decoration: none; 
+         outline: none;
+         display: block;
+    }
+    .navbar button:hover{
+        cursor: pointer;
+    }
+    .navbar #menu-close-button{
+       position: absolute;
+       right: 40px;
+       top: 30px;
+       
+    }
+    .navbar #menu-open-button{
+        color: rgb(41, 11, 11);
+        right: 50px;
+        top: 40px;
+        position: absolute;
+    }
+   
+    .navbar .navlist .navUnlist{
+        background-color: rgb(245, 240, 220);
+        left: -300px;
+        top: 0;
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       padding-top: 100px;
+       transition: 0.2s ease;
+    }
+    body.showMenu .navbar .navlist .navUnlist{
+        left: 0;
+    }
+    body.showMenu::before{
+        position: fixed;
+        content: "";
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height:100%
+    }
+    .navbar .navlist .navUnlist .navullink a{
+        color:rgb(161, 98, 58);
+        font-size: x-large;
+    }
+  
+    .section-1 .section-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px 10px 10px;
+    }
+    .section-1 .section-content .image img{
+        max-width: 270px;
+        margin-top: 50px;
+        margin-right: 0;
+        
+    }
+    .section-1 .section-content .section-details .heading,.sectionContent .aboutDetails {
+
+         max-width: 100%;
+    }
+    .section-1 .section-content .section-details :is(.subtitle, p){
+        max-width: 100%;
+    }
+    .section-1 .section-content .section-details .buttons{
+            justify-content: center;
+    }
+    .aboutContainer .sectionContent{
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .aboutContainer .sectionContent .aboutImage img{
+        max-width: 250px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        margin-top: 50px;
+    }
+    .menusection .menulist .lists .image-title{
+        padding-top:30px;
+        font-size:x-large;
+    }
+    .menusection .menulist .lists .image-description{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .menusection .menulist{
+        
+        gap: 30px;
+        
+    }
+    .menusection .menulist .lists{
+      
+       width: calc(100% /2 - 30px);
+       
+    }
+    .menusection .menulist .lists img{
+        max-width:200px;
+     
+    }
+    
+    .gallerysection .gallerylist .galleryitem{
+        width: calc(100% / 2 - 30px);
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .menusection .menulist{
+        
+        gap: 70px;
+        
+    }
+    .menusection .menulist .lists{
+      
+       width: 100%;
+       
+    }
+    .menusection .menulist .lists img{
+        max-width:200px;
+     
+    }
+    .gallerysection .gallerylist .galleryitem{
+        width: calc(100% / 1 - 28px);
+    }
+    .contactsection .contactdetails{
+       flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
+    }
+    .contactsection .contactform{
+        max-width: 100%;
+    }
+    .footersection .sectioncontent{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+
